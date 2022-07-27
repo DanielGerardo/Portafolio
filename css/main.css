@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+background-color: antiquewhite;
+}
+label{
+margin: 10px;
+}
+
+.App{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+}
+
