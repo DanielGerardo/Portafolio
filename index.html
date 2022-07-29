@@ -4,57 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
     <title>Portafolio</title>
   </head>
   <body>
     <div class="App">
-        <div class="navbar">
-            <nav>
-                <div class="logo">Logo</div>
-                <div class="links">
-                    <a href="#formulario">Tecnologias</a>
-                    <a href="">Contacto</a>
-                    <a href="">Redes Sociales</a>
+      
+      <div class="container-lg-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">DC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-      <div class="table-tec">
-        <h3>Tecnologias</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Tecnologia</th>
-              <th>Conocimiento</th>
-              <th>End</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>HTML</th>
-              <th>70%</th>
-              <th>Front-End</th>
-            </tr>
-            <tr>
-              <th>CSS</th>
-              <th>50%</th>
-              <th>Front-End</th>
-            </tr>
-            <tr>
-              <th>JavaScript</th>
-              <th>100%</th>
-              <th>Front-End</th>
-            </tr>
-            <tr>
-              <th>MySQL</th>
-              <th>100%</th>
-              <th>Back-End</th>
-            </tr>
-          </tbody>
-        </table>
+            </div>
+        </nav>
+
+        <div class="container">
+          <div class="row justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <img src="assets/img/foto.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Daniel Campos</h5>
+                      <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y
+                          componer la mayor parte del contenido de la tarjeta.</p>
+                      <a href="#formulario" class="btn btn-primary">Contáctame</a>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="fromContanto" id="formulario">
+
+<br>
+      <div class="container col" id="formulario">
         <h2>Contacto</h2>
+
         <form action="https://www.google.com/" method="get">
           <label for="txtNombre">Nombre(s) / Empresa</label><br />
           <input type="text" id="txtNombre" /><br />
@@ -65,30 +70,50 @@
           <label for="txtAsunto">Asunto</label><br />
           <input type="text" id="txtAsunto" /><br />
           <label for="txtMensaje">Mensaje</label><br />
-          <textarea cols="50" id="txtMensaje"></textarea><br />
+          <textarea id="txtMensaje"></textarea><br />
           <input type="submit" value="Enviar" />
-        </form>
+        </form>     
       </div>
-      <div class="redesSociales">
-        <a
+      <br>
+      <br>
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col">
+        <a class="mg-1"
           href="https://github.com/DanielGerardo?tab=repositories"
           target="_blank"
-          ><img src="assets/img/github.png" alt="" width="100px"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/daniel-gerardo-campos-garcia-1415a0218/"
-          target="_blank"
-          ><img src="assets/img/linkedin.png" alt="" width="100px"
-        /></a>
-        <a
-          href="https://www.facebook.com/danielgerardo.camposgarcia"
-          target="_blank"
-          ><img src="assets/img/facebook.png" alt="" width="100px"
-        /></a>
-        <a href="mailto:danielgecampos97@hotmail.com"
-          ><img src="assets/img/email.png" alt="" width="100px"
+          ><img src="assets/img/github.png" alt="" width="30px"
         /></a>
       </div>
+      <div class="col">
+        <a class="mg-1"
+          href="https://www.linkedin.com/in/daniel-gerardo-campos-garcia-1415a0218/"
+          target="_blank"
+          ><img src="assets/img/linkedin.png" alt="" width="30px"
+        /></a>
+      </div>
+
+    <div class="col">
+        <a class="mg-1"
+          href="https://www.facebook.com/danielgerardo.camposgarcia"
+          target="_blank"
+          ><img src="assets/img/facebook.png" alt="" width="30px"
+        /></a>
+      </div>
+      <div class="col">
+        <a class="mg-1" href="mailto:danielgecampos97@hotmail.com"
+          ><img src="assets/img/email.png" alt="" width="30px"
+        /></a>
+      </div>
+      </div>
     </div>
+    <br>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
