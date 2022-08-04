@@ -19,9 +19,9 @@
     <div class="App">
       
       <div class="container-lg-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #393e46ee;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">DC</a>
+                <a class="navbar-brand">DC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                            <a class="nav-link" aria-current="page" href="#">Sobre mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Proyectos</a>
@@ -37,55 +37,128 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="assets/archivos/CV Daniel Campos.pdf" target="_blank">Descargar CV</a>
+                      </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        <div class="container">
-          <div class="row justify-content-center">
-              <div class="card" style="width: 18rem;">
-                  <img src="assets/img/foto.jpeg" class="card-img-top" alt="...">
+        </nav></div>
+        
+<br>
+<div class="fondo">
+      <img src="assets/img/fondo.gif" alt="">  
+</div>
+        <div class="container-fluid">
+          <div class="row justify-content-end">
+              <div class="card" id="sobreMi">
+                  <img src="assets/img/foto.jpeg" class="card-img sobreMiImg align-self-center" alt="...">
                   <div class="card-body">
                       <h5 class="card-title">Daniel Campos</h5>
-                      <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y
-                          componer la mayor parte del contenido de la tarjeta.</p>
-                      <a href="#formulario" class="btn btn-primary">Contáctame</a>
+                      <p class="card-text">"Ingeniero en sistemas computacionales con pensamiento lógico y capaz de trabajar bajo presión buscando
+                        siempre una manera de optimizar el trabajo siendo apasionado y autodidacta en la programación, además
+                        dispuesto a recibir retroalimentación para mejorar los proyectos y así mismo hacer una mejor mancuerna con
+                        el equipo de trabajo"
+                        </p>
+                      <!-- <a href="#formulario" class="btn btn-primary">Contáctame</a> -->
                   </div>
               </div>
           </div>
       </div>
-
+      <div class="container-fluid tecnologias">
+        <div class="tecnologias-items"><img src="assets/img/Java.png" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/c.png" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/js.png" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/VB.NET.png" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/mySQL-logo.png" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/SQLserverLogo.svg" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/Android_Studio.png" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/ASP.png" alt=""></div>
+        <div class="tecnologias-items"><img src="assets/img/Gitlogo.png" alt=""></div>
+      </div>
+      <div class="container" style="margin-top: 20px; background-color: #4ecca270;box-shadow: 0px 2px 7px 0px;">
+        <h2 id="proyectos">Proyectos</h2>
+        <div id="grid-proyecto">
+          <div class="card proyecto">
+            <img src="assets/img/proyectos/sistemaGym.svg" class="card-img align-self-center proyectoSoft" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Software para Gym</h5>
+              <p class="card-text"> 
+                Este sistema fue desarrollado a petición de cliente, esto para llevar el control de las entradas y salidas tanto de productos como de usuarios, saber los vencimientos de las mensualidades o planes, así como conocer los ingresos del día o rango de fechas y graficas.</p>           
+               <b> Herramientas (Base de datos-SQLServer, Java-NetBeans)</b><a href="https://github.com/DanielGerardo/Sistema_GYM" target="_blank"><svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+              
+              <!-- <a href="#formulario" class="btn btn-primary">Contáctame</a> -->
+            </div>
+          </div>
+          <div class="card proyecto">
+            <img src="assets/img/proyectos/Appgym.svg" class="card-img proyectoImg align-self-center proyectoApp" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">App Gym</h5>
+                <p class="card-text">Esta App es un complemento para el Software Desktop contiene lo mismo excepto el login para el usuario, graficas y solo se puede buscar Vencimientos, Ventas y Entradas de un día en específico.
+                  </p>
+                  <b> Herramientas (Base de datos-SQLServer, Java-Android Studio)</b><a href="https://github.com/DanielGerardo/APP_GYM" target="_blank"><svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+                <!-- <a href="#formulario" class="btn btn-primary">Contáctame</a> -->
+            </div>
+          </div>
+          <div class="card proyecto">
+            <img src="assets/img/proyectos/LoteEconomico.webp" class="card-img proyectoImg align-self-center proyectoLote" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Calculador de pedidos por año</h5>
+              <p class="card-text"> Este mini sistema ayuda a evitar un déficit económico, al dar la información de cada cuando se deben hacer los pedidos de productos, cantidad más recomendada a pedir, el costo por año y la cantidad de pedidos por año.
+            </p>
+            <b> Herramientas (Java-NetBeans)</b>
+            <a href="https://github.com/DanielGerardo/LoteEconomico" target="_blank"><svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+          </p>
+            <!-- <a href="#formulario" class="btn btn-primary">Contáctame</a> -->
+          </div>
+        </div>
+        <div class="card proyecto">
+          <img src="assets/img/proyectos/CarritoPHP.JPG" class="card-img proyectoImg align-self-center proyectoLote" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">Carrito PHP</h5>
+          <p class="card-text"> Mini proyecto para practicar CRUD con php, BD en mySQL Registro de usuarios, Productos y Carrito de Compras.
+          </p>
+          <b> Herramientas (PHP-XAMPP-mySQL-VS)</b>
+          <a href="https://github.com/DanielGerardo/PracticaCRUD-PHP" target="_blank"><svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+          <!-- <a href="#formulario" class="btn btn-primary">Contáctame</a> -->
+      </div>
+  </div>
+        </div>
+      </div>
 <br>
       <div class="container col" id="formulario">
         <h2>Contacto</h2>
 
-        <form action="https://www.google.com/" method="get">
-          <label for="txtNombre">Nombre(s) / Empresa</label><br />
-          <input type="text" id="txtNombre" /><br />
-          <label for="txtTel">Tel. Contacto</label><br />
-          <input type="text" id="txtTel" /><br />
-          <label for="txtCorreo">Correo</label><br />
-          <input type="email" id="txtCorreo" /><br />
-          <label for="txtAsunto">Asunto</label><br />
-          <input type="text" id="txtAsunto" /><br />
-          <label for="txtMensaje">Mensaje</label><br />
-          <textarea id="txtMensaje"></textarea><br />
-          <input type="submit" value="Enviar" />
-        </form>     
+        <form action="https://www.google.com/" method="get" class="container col-8">
+          <div class="col">        
+          <input type="text" id="txtNombre" placeholder="Nombre(s) / Empresa"/></div>
+
+          <div class="col">
+          <input type="text" id="txtTel" placeholder="Tel. Contacto"/></div>
+
+          <div class="col">
+          <input type="email" id="txtCorreo" placeholder="Correo" /></div>
+
+          <div class="col">
+          <input type="text" id="txtAsunto" placeholder="Asunto" /></div>
+
+          <div class="col">
+          <textarea id="txtMensaje" rows="6" placeholder="Mensaje"></textarea></div>          
+          <input type="submit" value="Enviar" style="margin-bottom: 20px;"/>          
+        </form>  
       </div>
       <br>
       <br>
-      <div class="container">
-      <div class="row justify-content-center">
-        <div class="col">
+      <div class="container-fluid">
+      <div class="row" style="background-color: #393E46; height: 70px;">
+        <div class="col align-self-center">
         <a class="mg-1"
           href="https://github.com/DanielGerardo?tab=repositories"
           target="_blank"
           ><img src="assets/img/github.png" alt="" width="30px"
         /></a>
       </div>
-      <div class="col">
+      <div class="col align-self-center">
         <a class="mg-1"
           href="https://www.linkedin.com/in/daniel-gerardo-campos-garcia-1415a0218/"
           target="_blank"
@@ -93,21 +166,20 @@
         /></a>
       </div>
 
-    <div class="col">
+    <div class="col align-self-center">
         <a class="mg-1"
           href="https://www.facebook.com/danielgerardo.camposgarcia"
           target="_blank"
           ><img src="assets/img/facebook.png" alt="" width="30px"
         /></a>
       </div>
-      <div class="col">
+      <div class="col align-self-center">
         <a class="mg-1" href="mailto:danielgecampos97@hotmail.com"
           ><img src="assets/img/email.png" alt="" width="30px"
         /></a>
       </div>
       </div>
-    </div>
-    <br>
+    </div>   
   </div>
 
     <script
@@ -115,5 +187,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="/js/main.js"></script> -->
   </body>
 </html>

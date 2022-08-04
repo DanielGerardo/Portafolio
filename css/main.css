@@ -1,14 +1,26 @@
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-color: antiquewhite;
+    background-color: #EEEEEE;
+    font-size: 18px;
 }
 
 *{
     box-sizing: border-box;
 }
-
-/* nav {
+.navbar{
+    margin: 0;
+    height:50px;
+    box-shadow: 0px 2px 7px 0; 
+}
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+background-color: rgba(255, 255, 255, 0.171);
+border-bottom: 1px solid white;
+}
+ /* nav{
     position: sticky;
     top: 0;
     display: flex;
@@ -17,8 +29,12 @@ body{
     padding: 1.5rem 2rem;
     background-color: #eaeaea;
     transition: top 500ms ease-in-out;
-} */
-
+}  */
+.sobreMiImg{
+    border-radius: 50%;
+    width: 150px;
+    margin: 10px;        
+}
 
  .App{
 
@@ -28,8 +44,102 @@ text-align: center;
 flex-direction: column;
 
 } 
-#formulario{    
-    background-color: rgb(255, 255, 255);
+#formulario{  
+    background-color: #4ecca270;
+    border-radius: 10px; 
+    box-shadow: 0px 2px 7px 0; 
+}
+#formulario h2{
+    background-color: #393e46b0; 
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+#sobreMi{
+    margin-top: 25px;
+    width: 50rem; 
+    background-color: #ffffff;
+     
+}
+#sobreMi h5{
+    background-color: #393e46b0; 
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+.tecnologias{
+    display: grid;
+    max-width: 1360px;
+    gap: 1.2rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    justify-items: center;
+    margin: 0;
+    background-color: #4ecca270;
+    padding: 10px;
+    box-shadow: 0px 2px 7px 0px;
+}
+.tecnologias-items{
+    width: 8rem;
+    height: 8rem;
+}
+.tecnologias img{   
+    height: 70%;
+    object-position: center;
+    object-fit: cover;
+}
+#proyectos{
+    background-color: #393e46b0; 
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+.proyectoSoft,.proyectoLote{
+    padding: 0;
+    width: 100%;
+}
+.proyectoApp{
+    padding: 0;
+    width: 30%;
+}
+
+#grid-proyecto{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    font-size: 1rem;
+}
+.proyecto:hover{   
+    box-shadow: 0 4px 4px rgba(0, 0, 0,0.4);
+}
+input,textarea{    
+width: 70%;
+margin: 10px;
+border: none;
+}
+.fondo img{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 68.5%;
+    
+    /* background-image: url(/assets/img/fondo.gif); */
+  
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  */
+}
+input:hover,textarea:hover{    
+    width: 74%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    }
+input[type=submit]:hover{
+background-color: #393e46fb;
+color: white;
+font-weight: bold;
 }
 /* .links{
     display:flex;
@@ -52,12 +162,21 @@ margin: 0 1em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 } */
-
-
-
-
-
 label{
     margin: 10px;
     }
-    
+
+@media (max-width: 400px) {
+    #formulario input,textarea{  
+        width: 100%;
+
+    }
+    #navbarNav{
+     background-color: #393e46ee;
+    }
+    .tecnologias {
+        gap: 2rem;
+        grid-auto-rows: 5rem;
+        grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    }
+}
