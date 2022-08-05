@@ -86,10 +86,82 @@ flex-direction: column;
     object-position: center;
     object-fit: cover;
 }
+#habilidades{ 
+    background-color: #393e46b0; 
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+.hab-body{
+    margin: 0 auto;
+    max-width: 70%;
+    display: block;
+    align-items: center;
+    overflow: hidden;
+    padding: 0.625rem;
+    background-color:rgba(255, 255, 255, 0.51);
+    border-radius: 20px;
+       
+}
+.hab-body li{
+    list-style: none;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px;
+}
+.hab-li{   
+    background-color: white;
+}
+#equipo{
+    font-size: .60em;
+    color: rgba(204, 204, 204, 0);
+    border-radius: 5px 5px 5px 5px;        
+    width: 97%;
+    background: linear-gradient(270deg,#018a08ce,hsla(110, 100%, 50%, 0.692));
+}
+#perseverancia{
+    font-size: .60em;
+    color: rgba(204, 204, 204, 0);
+    border-radius: 5px 5px 5px 5px;        
+    width: 90%;
+    background: linear-gradient(270deg,#018a08ce,hsla(110, 100%, 50%, 0.692));
+}
+#aprendizaje{
+    font-size: .60em;
+    color: rgba(204, 204, 204, 0);
+    border-radius: 5px 5px 5px 5px;        
+    width: 94%;
+    background: linear-gradient(270deg,#018a08ce,hsla(110, 100%, 50%, 0.692));
+}
+#orientacion{
+    font-size: .60em;
+    color: rgba(204, 204, 204, 0);
+    border-radius: 5px 5px 5px 5px;        
+    width: 86%;
+    background: linear-gradient(270deg,#018a08ce,hsla(110, 100%, 50%, 0.692)); 
+}
 #proyectos{
     background-color: #393e46b0; 
     color: white;
     border-radius: 0px 0px 15px 15px;
+}
+#metodologias{
+    background-color: #393e46b0; 
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+#scrum{
+    font-size: .60em;
+    color: rgba(204, 204, 204, 0);
+    border-radius: 5px 5px 5px 5px;        
+    width: 60%;
+    background: linear-gradient(270deg,#6a018ace,hsla(110, 100%, 50%, 0.692)); 
+}
+#mvc{
+    font-size: .60em;
+    color: rgba(204, 204, 204, 0);
+    border-radius: 5px 5px 5px 5px;        
+    width: 90%;
+    background: linear-gradient(270deg,#6a018ace,hsla(110, 100%, 50%, 0.692)); 
 }
 a{
     color: black;
