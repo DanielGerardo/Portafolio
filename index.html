@@ -176,19 +176,19 @@
 
         <form action="https://www.google.com/" method="get" class="container col-8">
           <div class="col">        
-          <input type="text" id="txtNombre" placeholder="Nombre(s) / Empresa"/></div>
+          <input type="text" id="txtNombre" placeholder="Nombre(s) / Empresa" minlength="4" autocomplete="off" required/></div>
 
           <div class="col">
-          <input type="text" id="txtTel" placeholder="Tel. Contacto"/></div>
+          <input type="text" minlength="10" id="txtTel" placeholder="Tel. Contacto" pattern="[0-9]{10}" autocomplete="off" required/></div>
 
           <div class="col">
-          <input type="email" id="txtCorreo" placeholder="Correo" /></div>
+          <input type="email" id="txtCorreo" placeholder="Correo" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" autocomplete="off"     minlength="8" required/></div>
 
           <div class="col">
-          <input type="text" id="txtAsunto" placeholder="Asunto" /></div>
+          <input type="text" id="txtAsunto" placeholder="Asunto" minlength="5" autocomplete="off" required/></div>
 
           <div class="col">
-          <textarea id="txtMensaje" rows="6" placeholder="Mensaje"></textarea></div>          
+          <textarea id="txtMensaje" rows="6" placeholder="Mensaje" required autocomplete="off"></textarea></div>          
           <input type="submit" value="Enviar" style="margin-bottom: 20px;"/>          
         </form>  
       </div>
