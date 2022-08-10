@@ -1,6 +1,14 @@
 
-nombre = prompt("Cual es tu nombre?");
+const carga = document.querySelector('.carga');
+const App = document.querySelector('.App');
+const scrollY = document.querySelector('body');
 
+setTimeout(() =>{
+  scrollY.style.overflowY = 'visible'
+  
+},3000)
 
-alert(nombre);
-console.log(nombre);
+setTimeout(() =>{
+  carga.style.display = 'none'
+  App.style.opacity = 1;
+},3000)
