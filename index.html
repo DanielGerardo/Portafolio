@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/email.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Portafolio</title>
   </head>
   <body>
@@ -182,23 +184,30 @@
       <div class="container col" id="formulario">
         <h2>Contacto</h2>
 
-        <form action="https://www.google.com/" method="get" class="container col-8">
+        <form id="form" class="container col-8">
           <div class="col">        
-          <input type="text" id="txtNombre" placeholder="Nombre(s) / Empresa" minlength="4" autocomplete="off" required/></div>
+          <input type="text" class="textoFrom" id="txtNombre" name="txtNombre" placeholder="Nombre(s) / Empresa" minlength="4" autocomplete="off" required/></div>
 
           <div class="col">
-          <input type="text" minlength="10" id="txtTel" placeholder="Tel. Contacto" pattern="[0-9]{10}" autocomplete="off" required/></div>
+          <input type="text" class="textoFrom" minlength="10" id="txtTel" name="txtTel" placeholder="Tel. Contacto" pattern="[0-9]{10}" autocomplete="off" required/></div>
 
           <div class="col">
-          <input type="email" id="txtCorreo" placeholder="Correo" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" autocomplete="off"     minlength="8" required/></div>
+          <input type="email" class="textoFrom" id="txtCorreo" name="txtCorreo" placeholder="Correo" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" autocomplete="off"     minlength="8" required/></div>
 
           <div class="col">
-          <input type="text" id="txtAsunto" placeholder="Asunto" minlength="5" autocomplete="off" required/></div>
+          <input type="text" class="textoFrom" id="txtAsunto" name="txtAsunto" placeholder="Asunto" minlength="5" autocomplete="off" required/></div>
 
           <div class="col">
-          <textarea id="txtMensaje" rows="6" placeholder="Mensaje" required autocomplete="off"></textarea></div>          
-          <input type="submit" value="Enviar" style="margin-bottom: 20px;"/>          
-        </form>  
+          <textarea id="txtMensaje" class="textoFrom" rows="6" name="txtMensaje" placeholder="Mensaje" required autocomplete="off"></textarea></div>          
+          <input type="submit" id="btnEnviarCorreo" value="Enviar" style="margin-bottom: 20px;"/>          
+        </form>
+       
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('Zj12PU5mspWln7UDE')
+      </script>
       </div>
       <br>
       <br>
@@ -240,6 +249,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="/js/main.js"></script> -->
+   
   </body>
 </html>

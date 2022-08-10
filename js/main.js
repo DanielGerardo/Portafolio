@@ -1,10 +1,10 @@
 
 const carga = document.querySelector('.carga');
 const App = document.querySelector('.App');
-const scrollY = document.querySelector('body');
+const body = document.querySelector('body');
 
 setTimeout(() =>{
-  scrollY.style.overflowY = 'visible'
+  body.style.overflowY = 'visible'
   
 },3000)
 
