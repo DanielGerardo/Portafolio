@@ -239,11 +239,16 @@ opacity: 0;
     color: white;
     border-radius: 15px 15px 15px 15px;
 }
+#patrones{
+    background-color: #393e46b0; 
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
 #scrum{
     font-size: .60em;
     color: rgba(204, 204, 204, 0);
     border-radius: 5px 5px 5px 5px;        
-    width: 60%;
+    width: 70%;
     background: linear-gradient(270deg,#6a018ace,hsla(110, 100%, 50%, 0.692)); 
 }
 #mvc{
@@ -251,7 +256,14 @@ opacity: 0;
     color: rgba(204, 204, 204, 0);
     border-radius: 5px 5px 5px 5px;        
     width: 90%;
-    background: linear-gradient(270deg,#6a018ace,hsla(110, 100%, 50%, 0.692)); 
+    background: linear-gradient(270deg,#01218ace,hsla(110, 100%, 50%, 0.692)); 
+}
+#mvp{
+    font-size: .60em;
+    color: rgba(204, 204, 204, 0);
+    border-radius: 5px 5px 5px 5px;        
+    width: 75%;
+    background: linear-gradient(270deg,#01218ace,hsla(110, 100%, 50%, 0.692)); 
 }
 a{
     color: black;
