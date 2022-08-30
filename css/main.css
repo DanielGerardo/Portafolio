@@ -199,6 +199,7 @@ opacity: 0;
     margin: 5px;
 }
 .hab-li{   
+    overflow: hidden;
     background-color: white;
 }
 #equipo{
@@ -247,10 +248,23 @@ opacity: 0;
 #scrum{
     font-size: .60em;
     color: rgba(204, 204, 204, 0);
-    border-radius: 5px 5px 5px 5px;        
-    width: 70%;
+    border-radius: 5px 5px 5px 5px;           
     background: linear-gradient(270deg,#6a018ace,hsla(110, 100%, 50%, 0.692)); 
+    width: 70%;    
+    
 }
+@keyframes mostarArriba{
+        
+    0%{
+        
+        transform: translateX(-500px);
+          
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 #mvc{
     font-size: .60em;
     color: rgba(204, 204, 204, 0);
