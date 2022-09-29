@@ -37,9 +37,10 @@ function addProyecto(item){
   grid_proyecto.innerHTML += itemHTML;
 }
 
-function buscarProyectos(){
-    fetch("/assets/archivos/proyectos.json")
-      .then(response => {
+async function buscarProyectos() {
+  
+  await fetch("/assets/archivos/proyectos.json")
+       .then(response => {
          return response.json();
       })
       .then(json =>{
@@ -54,4 +55,8 @@ function buscarProyectos(){
         }
         
     })};
-buscarProyectos();
+
+setTimeout(() => {
+  
+  buscarProyectos();
+}, 3500);    
