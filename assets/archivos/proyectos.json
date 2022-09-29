@@ -1,0 +1,37 @@
+[     
+    {
+    "src":"sistemaGym.svg",
+    "title": "Software para Gym",
+    "desc": "Este sistema fue desarrollado a petición de cliente, esto para llevar el control de las entradas y salidas tanto de productos como de usuarios, saber los vencimientos de las mensualidades o planes, así como conocer los ingresos del día o rango de fechas y graficas.",
+    "herram": "Base de datos-SQLServer, Java-NetBeans",
+    "git": "https://github.com/DanielGerardo/Sistema_GYM"
+    },
+    {
+        "src":"Appgym.svg",
+        "title": "App Gym",
+        "desc": "Esta App es un complemento para el Software Desktop contiene lo mismo excepto el login para el usuario, graficas y solo se puede buscar Vencimientos, Ventas y Entradas de un día en específico.",
+        "herram": "Base de datos-SQLServer, Java-Android Studio",
+        "git": "https://github.com/DanielGerardo/APP_GYM"
+    },
+    {
+        "src":"LoteEconomico.webp",
+        "title": "Calculador de pedidos por año",
+        "desc": "Este mini sistema ayuda a evitar un déficit económico, al dar la información de cada cuando se deben hacer los pedidos de productos, cantidad más recomendada a pedir, el costo por año y la cantidad de pedidos por año.",
+        "herram": "Java-NetBeans",
+        "git": "https://github.com/DanielGerardo/LoteEconomico"
+        },
+        {
+            "src":"CarritoPHP.JPG",
+            "title": "Carrito PHP",
+            "desc": "Pequeño proyecto para practicar CRUD con php, BD en mySQL Registro de usuarios, Productos y Carrito de Compras.",
+            "herram": "PHP-XAMPP-mySQL-VS",
+            "git": "https://github.com/DanielGerardo/PracticaCRUD-PHP"
+        },
+        {
+            "src":"Popcollector.JPG",
+            "title": "PopCollector",
+            "desc": "Proyecto de titulación Generation. Creación de E-Commer (B2C) para coleccionistas amantes del entretenimiento (cine, literatura y música).",
+            "herram": "SCRUM(Jira), GitHub Front-end: JS/HTML/CSS, Bootstrap. Back-end: MySQL y Java (Spring Boot).",
+            "git": "https://github.com/DanielGerardo/Proyecto_Integrador/tree/testProyecto"
+        }
+]
