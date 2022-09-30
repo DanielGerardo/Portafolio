@@ -39,7 +39,7 @@ function addProyecto(item){
 
 async function buscarProyectos() {
   
-  await fetch("/assets/archivos/proyectos.json")
+  await fetch("assets/archivos/proyectos.json")
        .then(response => {
          return response.json();
       })
