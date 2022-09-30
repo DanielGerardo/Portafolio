@@ -8,11 +8,12 @@ setTimeout(() =>{
   
 },3000)
 
+
+
 setTimeout(() =>{
   carga.style.display = 'none'
   App.style.opacity = 1;
 },3000)
-
 
 const equipo = document.getElementById("equipo");
 const perseverancia = document.getElementById("perseverancia");
@@ -21,6 +22,7 @@ const orientacion = document.getElementById("orientacion");
 const scrum = document.getElementById("scrum");
 const mvc = document.getElementById("mvc");
 const mvp = document.getElementById("mvp");
+
 
 
 
@@ -35,6 +37,7 @@ function mostrarBarras(){
         scrum.style.animation = 'mostarBarras 3.8s';
         mvc.style.animation = 'mostarBarras 4s';
         mvp.style.animation = 'mostarBarras 4.2s';
+       
       }else{
         equipo.style.animation = 'none';
         perseverancia.style.animation = 'none';
