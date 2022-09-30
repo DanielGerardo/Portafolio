@@ -319,7 +319,7 @@ label {
 }
 
 .imagenCarga {
-  width: 15rem;
+  width: 12rem;
   -webkit-animation: logoCargaRotar 3s;
           animation: logoCargaRotar 3s;
 }
