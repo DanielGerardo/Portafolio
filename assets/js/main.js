@@ -7,9 +7,6 @@ setTimeout(() =>{
   body.style.overflowY = 'visible'
   
 },3000)
-
-
-
 setTimeout(() =>{
   carga.style.display = 'none'
   App.style.opacity = 1;
